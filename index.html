@@ -17,15 +17,21 @@
             color: #424242;
         }
         
-        .row{
-            xmargin: 140px auto;            
-        }
-        
         header{
             padding-top: 20px;
+            height: 600px;
             color: #FFF;
             background-color: #4cb1b5;
             background-image: url(img/top_image_placeholder.png);
+        }
+        
+        header .logo{
+            
+            
+        }
+
+        footer .logo{
+            
         }
 
         footer{
@@ -33,7 +39,7 @@
             color: #FFF;
             background-color: #4cb1b5;
         }
-        
+                
         .text-center{
             text-align: center;
         }
@@ -46,18 +52,38 @@
 
         .jumbotron{
             background-color: transparent;
+            padding-top: 16px;
+            padding-bottom: 16px;
         }
         
-        section.white{
-            color: #424242;
-            background-color: white;
-        }
-        
-        section.green{
-            color: #4cb1b5;
-            background-color: white;
+        section.grey{
+            background-color: #FAFAFA;
         }
 
+        .swe{
+            color: #424242;
+        }
+        
+        .eng{
+            color: #4cb1b5;
+        }
+        
+        .divider{
+            background-color: #4cb1b5;
+            height: 2px;
+            width: 50px;
+        }
+        
+        li{
+            list-style: none;
+            margin-bottom: 10px;
+        }
+                
+        li .year{
+            font-weight: bold;
+        }
+        
+        
 
     </style>
 
@@ -68,19 +94,18 @@
   </head>
   
     <body>
+        
+        <header>
+            <img class="img-fluid" src="img/logo.png" />
+        </header>
 
-
-        <section class="white container-fluid">
+        <section class="grey container-fluid">
             <div class="narrow">
-                <div class="jumbotron text-center">
+                <div class="jumbotron text-center swe">
                     <p>Åberg & Fahlander drivs av Claes Åberg och Annika Fahlander. Vi har nära samarbete med revisorer samt ett brett kontaktnät när det gäller sakkunskap på andra områden. Vi arbetar till största delen med småföretagare och deras löpande verksamhet, tvister och ekonomisk familjerätt. Som småföretagare kan man behöva hjälp med en mängd olika juridiska frågor, att skriva avtal, hantera tvister, arbetsrättsliga frågor, bolagsrättsliga frågor, tillstånd från myndigheter e t c. Vi biträder våra klienter även i privaträttsliga frågor.</p>
                 </div>
-            </div>
-        </section>
 
-        <section class="green container-fluid">
-            <div class="narrow">
-                <div class="jumbotron text-center">
+                <div class="jumbotron text-center eng">
                     <p>Åberg & Fahlander is run by Claes Åberg and Annika Fahlander. We have a close cooperation with auditors and many contacts with expertise in other areas. Mostly we work with owner led companies and their operating activities, disputes, litigations and financial family law. As owner of a company you may need help in a number of legal matters, such as writing contracts, handle disputes and litigations, labour matters, company matters, permissions from authorities e t c. We also assist our clients in private law matters.</p>
                 </div>
             </div>
@@ -92,25 +117,49 @@
                 <div class="col-md-6 text-center">
                     <img src="img/man.png" class="img-fluid" />
                     <h2>Claes Åberg</h2>
-                    <p>Här skriver vi en text om vilka branscher vi har erfarenhet ifrån</p>
+                    <p>
+                        +46 (0)705 29 88 58<br />
+                        claes@abergfahlander.se
+                    </p>
+                    
+                    <div class="divider"></div>
+                    
+                    <ol>
+                        <li>
+                            <div class="year">1980</div>
+                            <div class="swe">Jur kand</div>
+                            <div class="eng">Bachelor of Law</div>
+                        </li>                        
+
+                        <li>
+                            <div class="year">1980-1984</div>
+                            <div class="swe">Tingsnotarie, hovrättsfiskal och tingsfiskal</div>
+                            <div class="eng">Law clerc, assistant judge at a district cort and assistant judge of appeal</div>
+                        </li>                        
+                    </ol>
                 </div>
                 <div class="col-md-6 text-center">
                     <img src="img/kvinna.png" class="img-fluid" />
                     <h2>Annika Fahlander</h2>
-                    <p>Vi arbetar med standardiserade processer och verktyg, vi förespråkar även möjligheterna med open source och bleeding edge-teknik för att snabba på utvecklingstakten</p>
+                    <p>
+                        +46 (0)709 48 07 19<br />
+                        annika@abergfahlander.se
+                    </p>
                 </div>
             </div>
         </div>
 
         <footer>
             <div class="container">
-                <img src="img/logo.png" />
+                <img class="img-fluid" src="img/logo.png" />
                 
                 <div class="row">
                     <div class="col-md-12 text-center">
-                        <h3>Åberg & Fahlander HB</h3>
-                        <p>Västra Hamngatan 20<br />
-                        411 17 Göteborg</p>
+                        <p>
+                            Åberg & Fahlander HB<br />
+                            Västra Hamngatan 20<br />
+                            411 17 Göteborg<br />
+                        </p>
                     </div>
                 </div>
                 
