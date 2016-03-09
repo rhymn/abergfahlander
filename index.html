@@ -18,30 +18,49 @@
         }
         
         header{
-            height: 600px;
+            height: 400px;
             color: #FFF;
             background-color: #4cb1b5;
             background-image: url(img/top_image_placeholder.png);
-            padding: 0 200px;
+            background-size: cover;
         }
+
+        @media screen and (max-width: 799px) {
+            header .container{
+                max-width: 85%;
+            }
+        }
+
+        @media screen and (min-width: 800px) {
+            header .container{
+                max-width: 800px;
+            }
+        }
+
+        .opaque{
+            background-color: rgba(96, 196, 203, 0.6);
+            height: 100%;
+            width: 100%;
+        }        
         
         header img{
-            padding-top: 240px;
+            padding-top: 140px;
         }
         
-        header .logo{
-            
-            
-        }
-
-        footer .logo{
-            
-        }
 
         footer{
-            padding-top: 20px;
+            padding-top: 50px;
+            padding-bottom: 50px;
             color: #FFF;
             background-color: #4cb1b5;
+        }
+
+        footer .container{
+            max-width: 400px;
+        }
+
+        footer .container img{
+            margin: 30px auto;
         }
                 
         .text-center{
@@ -50,18 +69,20 @@
 
 
         .narrow{
-            max-width: 900px;	
+            max-width: 700px;	
             margin: 0 auto;
         }
 
         .jumbotron{
             background-color: transparent;
-            padding-top: 16px;
-            padding-bottom: 16px;
+            padding-top: 0;
+            padding-bottom: 0;
         }
         
         section.grey{
             background-color: #FAFAFA;
+            padding-top: 60px;
+            padding-bottom: 28px;
         }
 
         .swe{
@@ -114,7 +135,11 @@
     <body>
         
         <header>
-            <img class="img-fluid center-block" src="img/logo.png" />
+            <div class="opaque">
+                <div class="container">
+                    <img class="img-fluid center-block" src="img/logo.png" />
+                </div>
+            </div>
         </header>
 
         <section class="grey container-fluid">
@@ -231,6 +256,11 @@
                             Åberg & Fahlander HB<br />
                             Västra Hamngatan 20<br />
                             411 17 Göteborg<br />
+                        </p>
+
+                        <p>
+                            +46 (0)31-19 44 15<br />
+                            www.abergfahlander.se<br />
                         </p>
                     </div>
                 </div>
